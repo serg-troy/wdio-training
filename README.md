@@ -1,1 +1,1 @@
-Webdriver IO Template
+Webdriver IO Practice
