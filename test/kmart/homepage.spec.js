@@ -6,7 +6,3 @@ describe('test', ()=> {
     expect('.name').
   })
 });
-
-
-ллл
-c
