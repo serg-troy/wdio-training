@@ -1,4 +1,6 @@
 export default class Base {
-  open(path){}
+  open(path){
+    browser.url(path);
+  }
 
 }
