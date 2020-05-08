@@ -183,9 +183,6 @@ exports.config = {
    */
   beforeTest: function () {
     const chai = require('chai');
-    const chaiWebdriver = require('chai-webdriverio');
-    chai.use(chaiWebdriver(driver));
-
     global.expect = chai.expect;
   },
   /**
