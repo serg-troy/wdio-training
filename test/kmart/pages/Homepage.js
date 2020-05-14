@@ -11,8 +11,6 @@ class Homepage extends Base {
   searchFor(str){
     this.searchInput.setValue(str);
     this.goBtn.click();
-
-
   }
 }
 
