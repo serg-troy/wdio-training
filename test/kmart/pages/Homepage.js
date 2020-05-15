@@ -19,12 +19,6 @@ class Homepage extends Base {
     this.searchInput.setValue(str);
     this.goBtn.click();
   }
-
-  //
-  // skipOffer(){
-  //   browser.waitUntil(this.offerPopup.isDisplayed);
-  //
-  // }
 }
 
 export default new Homepage();
