@@ -19,6 +19,9 @@ class Homepage extends Base {
     this.searchInput.setValue(str);
     this.goBtn.click();
   }
+
+
+
 }
 
 export default new Homepage();
