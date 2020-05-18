@@ -41,6 +41,10 @@ class AppPage {
   clickButton(text) {
     $(`//button[text()="${text}"]`).click();
   }
+
+  countSumUpTo(n){
+    return (1 + n) * n / 2 + '';
+  }
 }
 
 export default new AppPage();
