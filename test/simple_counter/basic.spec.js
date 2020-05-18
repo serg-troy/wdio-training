@@ -16,16 +16,12 @@ describe('verify basic functionality', () => {
   });
 
   it('should verify counter incremented by right amount', () => {
-    for (let i = 1; i < 6; i++){
-      AppPage.clickButton(`${i}`);
-    }
+    AppPage.incrementArray.forEach(el => AppPage.clickButton(el));
     expect(AppPage.counter.getText()).eq(AppPage.countSumUpTo(5));
   });
 
   it('should verify counter decremented by right amount', () => {
-    for (let i = 5; i > 0; i--){
-      AppPage.clickButton(`${-i}`);
-    }
+    AppPage.decrementArray.forEach(el => AppPage.clickButton(el));
     expect(AppPage.counter.getText()).eq('0');
   });
 
@@ -33,4 +29,10 @@ describe('verify basic functionality', () => {
     AppPage.inputFieldFrom.setValue('6');
     expect(AppPage.errorMsg.isDisplayed()).true;
   });
+
+  it('should verify alert pops up when input non integer or value below 1/ above 2', ()=>{
+    AppPage.inputFieldFrom.setValue('wrong');
+    expect(browser.isAlertOpen()).true;
+    browser.pause(2000);
+  })
 });

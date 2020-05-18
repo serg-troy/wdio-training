@@ -19,6 +19,18 @@ class AppPage {
     return $('.IncrementButton');
   }
 
+  get fullArray() {
+    return $$('.IncrementButton').map(el => el.getText());
+  }
+
+  get incrementArray() {
+    return this.fullArray.filter(el => el > 0);
+  }
+
+  get decrementArray() {
+    return this.fullArray.filter(el => el < 0);
+  }
+
   get errorMsg() {
     return $('.errorMessage');
   }
@@ -42,8 +54,8 @@ class AppPage {
     $(`//button[text()="${text}"]`).click();
   }
 
-  countSumUpTo(n){
-    return (1 + n) * n / 2 + '';
+  countSumUpTo(n) {
+    return ((1 + n) * n) / 2 + '';
   }
 }
 
