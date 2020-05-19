@@ -30,7 +30,7 @@ describe('verify basic functionality', () => {
     expect(AppPage.errorMsg.isDisplayed()).true;
   });
 
-  it('should verify alert pops up when input non-integer or value below 1/ above 2', ()=>{
+  it('should verify alert pops up when input non-integer or value below 1/ above 2', () => {
     AppPage.inputFieldFrom.setValue('wrong');
     expect(browser.isAlertOpen()).true;
     browser.acceptAlert();
@@ -40,5 +40,5 @@ describe('verify basic functionality', () => {
     AppPage.inputFieldFrom.setValue(999.444);
     expect(browser.isAlertOpen()).true;
     browser.acceptAlert();
-  })
+  });
 });
