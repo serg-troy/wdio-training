@@ -36,11 +36,13 @@
     "@wdio/sync": "^6.1.0",
     "chai": "^4.2.0",
     "chromedriver": "^81.0.0",
-    "prettier": "2.0.5",
+    "eslint-plugin-babel": "^5.3.0",
+    "prettier": "^2.0.5",
     "wdio-chromedriver-service": "^6.0.2"
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "eslint": "^7.1.0",
     "npm-check-updates": "^4.1.2"
   }
 }

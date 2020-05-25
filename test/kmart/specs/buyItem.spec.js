@@ -9,7 +9,7 @@ describe('Test KMart', () => {
   });
 
   it('should find PS4 Pro and add it to cart', () => {
-    Homepage.searchFor('ps4 pro');
+    Homepage.searchFor('ps4 pro'  );
     $('.card-image').click();
     ProductPage.addToCartBtn.click();
   });
