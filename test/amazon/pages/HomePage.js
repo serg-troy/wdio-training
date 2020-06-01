@@ -23,9 +23,6 @@ class HomePage extends BasePage {
     $(`#s-result-sort-select_${n}`).click();
   }
 
-  chooseDiscountedElement(){
-
-  }
 }
 
 export default new HomePage();
