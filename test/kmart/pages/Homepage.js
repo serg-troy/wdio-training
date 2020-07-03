@@ -15,10 +15,7 @@ class Homepage extends Base {
     super.open('https://www.kmart.com');
   }
 
-  searchFor(str) {
-    this.searchInput.setValue(str);
-    this.goBtn.click();
-  }
+
 
 
 

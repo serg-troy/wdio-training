@@ -3,4 +3,8 @@ export default class Base {
     browser.url(path);
   }
 
+  searchFor(str) {
+    this.searchInput.setValue(str);
+    this.goBtn.click();
+  }
 }
