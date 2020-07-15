@@ -17,6 +17,10 @@ describe('Example', () => {
     browser.saveTabbablePage('save-tabbable', { /* some options, use the same options as for saveFullPageScreen */ });
   });
 //
+
+
+
+
 //   it('should compare successful with a baseline', () => {
 //     // Check a screen
 //     expect(browser.checkScreen('examplePaged', { /* some options */ })).toEqual(0);
