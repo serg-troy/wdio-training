@@ -23,6 +23,7 @@ describe('verify basic functionality', () => {
   it('should verify counter decremented by right amount', () => {
     AppPage.decrementArray.forEach(el => AppPage.clickButton(el));
     expect(AppPage.counter.getText()).eq('0');
+    
   });
 
   it('should verify error displayed when input IF1 value is bigger than IF2 value', () => {

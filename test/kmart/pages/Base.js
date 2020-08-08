@@ -7,4 +7,6 @@ export default class Base {
     this.searchInput.setValue(str);
     this.goBtn.click();
   }
+
+  
 }

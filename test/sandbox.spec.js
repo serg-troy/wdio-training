@@ -10,7 +10,7 @@ describe('SANDBOX', () => {
     $('#user_login_agreement').click();
     $('button[type="submit"]').waitForClickable();
     $('button[type="submit"]').click();
-    browser.pause(1500);
+    browser.pause(150);
   });
 
   it('should ', function () {
